@@ -37,9 +37,9 @@ nav a:hover {
     -webkit-column-count: 4;
     -moz-column-count: 4;
 
-    column-width: 240px;
-    -webkit-column-width: 240px;
-    -moz-column-width: 240px;
+    column-width: 360px;
+    -webkit-column-width: 360px;
+    -moz-column-width: 360px;
 
     /* Separação entre colunas por linha */
     -webkit-column-rule: 1px dotted #ddd;
@@ -52,7 +52,10 @@ nav a:hover {
 }
 
 .col {
-  width: 25%;
+  width: 25vw;
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+  padding: 4px;
 }
 
 .col-container:after {
