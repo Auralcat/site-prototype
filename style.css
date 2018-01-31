@@ -27,6 +27,23 @@ nav a:hover {
   padding: 20px;
 }
 
+.col-container {
+    /* Estas propriedades tornam o design responsivo */
+    /* Se você usar isso aqui, NÃO USE float: left */
+    column-count: 4
+    -webkit-column-count: 4
+    -moz-column-count: 4
+
+    column-width: 240px
+    -webkit-column-width: 240px
+    -moz-column-width: 240px
+
+    /* Separação entre colunas por linha */
+    -webkit-column-rule: 1px dotted #ddd
+    -moz-column-rule: 1px dotted #ddd
+    column-rule: 1px dotted #ddd
+}
+
 .col {
   float: left;
   width: 25%;
@@ -43,4 +60,3 @@ nav a:hover {
   text-align: center;
   padding: 10px;
 }
-
