@@ -8,24 +8,43 @@ html, body {
 }
 
 nav {
-  overflow: hidden;
   background-color: #333;
 }
 
-nav a {
+nav .dropdown {
   float: left;
   display: block;
-  color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
-nav a:hover {
-  background-color: #ddd;
+nav .dropdown:hover {
+  background-color: #faf;
   color: black;
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+    transition: all .3s ease-in-out;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 .apresentacao {
+    clear: both;
   text-align: center;
   padding: 20px;
 }
