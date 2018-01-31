@@ -37,31 +37,21 @@ nav a:hover {
     -webkit-column-count: 4;
     -moz-column-count: 4;
 
-    column-width: 360px;
-    -webkit-column-width: 360px;
-    -moz-column-width: 360px;
+    column-width: 10vw;
+    -webkit-column-width: 10vw;
+    -moz-column-width: 10vw;
 
     /* Separação entre colunas por linha */
     -webkit-column-rule: 1px dotted #ddd;
     -moz-column-rule: 1px dotted #ddd;
     column-rule: 1px dotted #ddd;
-
-    column-span: initial;
-    -webkit-column-span: initial;
-    -moz-column-span: initial;
 }
 
 .col {
-  width: 25vw;
+  width: 20vw;
   overflow: hidden;
   /* text-overflow: ellipsis; */
-  padding: 4px;
-}
-
-.col-container:after {
-  clear: both;
-  display: table;
-  content: "";
+  padding: 2vw;
 }
 
 .footer {
