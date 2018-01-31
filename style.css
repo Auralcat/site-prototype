@@ -1,3 +1,6 @@
+html, body {
+    height: 100%;
+}
 .header {
   background-color: #F1F1F1;
   text-align: center;
@@ -30,22 +33,25 @@ nav a:hover {
 .col-container {
     /* Estas propriedades tornam o design responsivo */
     /* Se você usar isso aqui, NÃO USE float: left */
-    column-count: 4
-    -webkit-column-count: 4
-    -moz-column-count: 4
+    column-count: 4;
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
 
-    column-width: 240px
-    -webkit-column-width: 240px
-    -moz-column-width: 240px
+    column-width: 240px;
+    -webkit-column-width: 240px;
+    -moz-column-width: 240px;
 
     /* Separação entre colunas por linha */
-    -webkit-column-rule: 1px dotted #ddd
-    -moz-column-rule: 1px dotted #ddd
-    column-rule: 1px dotted #ddd
+    -webkit-column-rule: 1px dotted #ddd;
+    -moz-column-rule: 1px dotted #ddd;
+    column-rule: 1px dotted #ddd;
+
+    column-span: initial;
+    -webkit-column-span: initial;
+    -moz-column-span: initial;
 }
 
 .col {
-  float: left;
   width: 25%;
 }
 
