@@ -103,6 +103,19 @@ iframe {
   word-wrap: break-word;
 }
 
+.container-botao {
+    text-align: center;
+    padding: 60px;
+    background: black;
+}
+
+button {
+    margin: auto;
+    background: orange;
+    color: black;
+    padding: 12px;
+}
+
 .footer {
   background-color: #F1F1F1;
   text-align: center;
