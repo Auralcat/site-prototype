@@ -10,6 +10,10 @@ html, body {
 
 nav {
   background-color: #333;
+  width: 100%;
+  height: 46px;
+  margin: 0px auto;
+  position: relative;
 }
 
 nav .dropdown {
@@ -50,6 +54,11 @@ nav .dropdown:hover {
   padding: 20px;
 }
 
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
 .col-container {
     /* Estas propriedades tornam o design responsivo */
     /* Se você usar isso aqui, NÃO USE float: left */
@@ -65,7 +74,7 @@ nav .dropdown:hover {
     -webkit-column-rule: 1px dotted #ddd;
     -moz-column-rule: 1px dotted #ddd;
     column-rule: 1px dotted #ddd;
-  
+
   /* Remove this in production */
   background: #c0ff33;
 }
