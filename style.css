@@ -1,5 +1,6 @@
 html, body {
     height: 100%;
+    margin: 0;
 }
 
 .header {
@@ -9,7 +10,7 @@ html, body {
 }
 
 nav {
-  background-color: #333;
+  background-color: white;
   width: 100%;
   height: 46px;
   margin: 0px auto;
@@ -24,7 +25,7 @@ nav .dropdown {
   text-decoration: none;
 }
 nav .dropdown:hover {
-  background-color: #faf;
+  background-color: #daa66a;
   color: black;
 }
 
@@ -80,13 +81,7 @@ iframe {
     -webkit-column-width: 20vw;
     -moz-column-width: 20vw;
 
-    /* Separação entre colunas por linha */
-    -webkit-column-rule: 1px dotted #ddd;
-    -moz-column-rule: 1px dotted #ddd;
-    column-rule: 1px dotted #ddd;
-
-  /* Remove this in production */
-  background: #c0ff33;
+    background: #231F20;
 }
 
 .col {
@@ -97,27 +92,31 @@ iframe {
   margin: auto;
   min-height: 1600px;
   display: inline-block;
-  background: #b4d455;
   text-align: center;
   text-justify: inter-word;
   word-wrap: break-word;
+  color: #696772;
+}
+
+.col > h2 {
+    color: #daa66a;
 }
 
 .container-botao {
     text-align: center;
     padding: 60px;
-    background: black;
+    background: #231F20;
 }
 
 button {
     margin: auto;
-    background: orange;
+    background: #f8a845;
     color: black;
     padding: 12px;
 }
 
 .footer {
-  background-color: #F1F1F1;
+  background: #231F20;
   text-align: center;
   padding: 10px;
 }
