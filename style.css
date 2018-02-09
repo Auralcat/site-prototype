@@ -119,11 +119,18 @@ iframe {
 
 button {
     margin: auto;
-    background: #f8a845;
     color: black;
     padding: 12px;
     font-family: "Myriad Pro Condensed";
     font-size: 20px;
+}
+
+#botao-principal {
+    background: #f8a845;
+}
+
+#botao-info {
+    background: gray;
 }
 
 .footer {

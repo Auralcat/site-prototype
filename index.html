@@ -1,5 +1,6 @@
+<!-- HTML para a página principal do XV Congresso Sul-Brasileiro de Bethéis
+     Autora: Miriam Retka (miriamretka@tutanota.com)-->
 <!DOCTYPE html>
-
 <head>
     <title>Protótipo site</title>
     <meta lang="en">
@@ -10,11 +11,13 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="./main.js"></script>
 </head>
-
+<!-- Corpo do site começa aqui -->
 <body>
+  <!-- Cabeçalho -->
     <div class='header'>
         <img alt="Capa Facebook alt" src="assets/images/CAPA FACEBOOK.jpg"/>
     </div>
+    <!-- Menu -->
     <nav>
         <div class="dropdown">
             <span>Local do evento</span>
@@ -41,16 +44,19 @@
             </div>
         </div>
     </nav>
+    <!-- Div pra englobar o conteúdo do site todo -->
     <div class='conteudo'>
         <hr>
         <div class="video">
             <iframe frameborder="0" src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
         </div>
         <hr>
+        <!-- Descrição do evento -->
         <div class='apresentacao'>
             <h2>XV Congresso Sul-Brasileiro de Bethéis</h2>
             <p>Lollipop candy sweet lemon drops sesame snaps cupcake jelly beans. Dragée fruitcake jelly beans jelly-o toffee chupa chups croissant cake. Gingerbread liquorice gummies. Candy canes cake pudding pudding oat cake chocolate bar liquorice cookie fruitcake. Jelly chocolate bar topping sugar plum danish cheesecake. Jelly cookie chocolate bar chocolate soufflé cake sesame snaps. Toffee danish pie halvah gingerbread gummies marshmallow. Marzipan apple pie danish tootsie roll. Pastry sugar plum caramels cookie halvah macaroon gummi bears chocolate sweet roll. Lemon drops lemon drops cheesecake. Apple pie chocolate bar cookie sugar plum powder muffin wafer carrot cake brownie. Croissant macaroon lemon drops candy. Toffee wafer gummies candy canes apple pie tart tart cheesecake. Bonbon dessert liquorice cheesecake chupa chups muffin chupa chups pastry.</p>
         </div>
+        <!-- Colunas com expansão ao passar o mouse sobre o texto, tamanho do min-height varia com o comprimento do texto -->
         <div class='col-container'>
             <div class='col'>
                 <h2>Quem somos</h2>
@@ -83,8 +89,9 @@
         </div>
     </div>
     <div class="container-botao">
-        <button>Inscreva-se</button>
+        <button id="botao-principal">Inscreva-se</button>
     </div>
+    <!-- Rodapé -->
     <div class='footer'>
       <a href="https://www.facebook.com/xvcosbe2018/" class="fa fa-facebook"></a>
       <a href="https://www.instagram.com/bethel06curitiba/" class="fa fa-instagram"></a>
