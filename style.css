@@ -1,6 +1,13 @@
+@font-face {
+    font-family: "Myriad Pro Condensed";
+    src: url("./assets/fonts/myriad-pro-condensed.ttf");
+}
+
 html, body {
     height: 100%;
     margin: 0;
+    font-family: "Myriad Pro Condensed";
+    font-size: 20px;
 }
 
 .header {
@@ -115,6 +122,8 @@ button {
     background: #f8a845;
     color: black;
     padding: 12px;
+    font-family: "Myriad Pro Condensed";
+    font-size: 20px;
 }
 
 .footer {
