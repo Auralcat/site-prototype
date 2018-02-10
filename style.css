@@ -80,8 +80,6 @@ iframe {
 }
 
 .col-container {
-    /* Estas propriedades tornam o design responsivo */
-    /* Se você usar isso aqui, NÃO USE float: left */
     column-count: 4;
     -webkit-column-count: 4;
     -moz-column-count: 4;
@@ -166,7 +164,6 @@ button {
 
 /* Fotos */
 .fotos {
-    margin: 0 auto;
     column-count: 4;
     -moz-column-count: 4;
     -webkit-column-count: 4;
@@ -186,11 +183,69 @@ button {
 .fotos img {
     box-shadow: 12px 12px 10px rgba(0, 0, 0, 0.2);
     transform-origin: center;
+    width: 240px;
+    height: 240px;
     margin: auto;
+    padding: 2vw;
 }
 
 /* Header da página de informações */
 
 .h2-info {
     color: #f1a961;
+}
+
+/* Media queries */
+@media (max-width: 1228px) {
+    .fotos {
+
+        column-count: 2;
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+
+        column-width: 40vw;
+        -moz-column-width: 40vw;
+        -webkit-column-width: 40vw;
+    }
+
+    .col-container {
+        column-count: 2;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+
+        column-width: 40vw;
+        -webkit-column-width: 40vw;
+        -moz-column-width: 40vw;
+    }
+
+    .col {
+      width: 40vw;
+    }
+}
+
+@media (max-width: 680px) {
+    .fotos {
+
+        column-count: 1;
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+
+        column-width: 80vw;
+        -moz-column-width: 80vw;
+        -webkit-column-width: 80vw;
+    }
+
+    .col-container {
+        column-count: 1;
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+
+        column-width: 80vw;
+        -webkit-column-width: 80vw;
+        -moz-column-width: 80vw;
+    }
+
+    .col {
+      width: 80vw;
+    }
 }
