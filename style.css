@@ -102,9 +102,9 @@ iframe {
   width: 20vw;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding: 3vw;
+  padding: 2vw;
   margin: auto;
-  min-height: 1600px;
+  height: auto;
   display: inline-block;
   text-align: center;
   text-justify: inter-word;
