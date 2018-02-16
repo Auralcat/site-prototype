@@ -12,13 +12,13 @@
     -moz-column-count: 4;
 
     column-width: 20vw;
-	-webkit-column-width: 20vw;
+    -webkit-column-width: 20vw;
     -moz-column-width: 20vw;
 
 }
 
 .col-container {
-	-webkit-column-width: 50vw; /* Arruma as colunas, mas por quÃª? */
+    -webkit-column-width: 50vw; /* Arruma as colunas, mas por quÃª? */
 }
 html, body {
     height: 100%;
@@ -29,12 +29,12 @@ html, body {
 
 .header {
     text-align: center;
-	background: #231F20; /* Cobre a folga entre a imagem e o cabeÃ§alho */
+    background: #231F20; /* Cobre a folga entre a imagem e o cabeÃ§alho */
 }
 
 /* Preencher cabeÃ§alho com imagem */
 .header img {
-	width: 100%;
+    width: 100%;
 }
 
 /* Navbar do WordPress */
@@ -47,14 +47,14 @@ html, body {
 
 .nav ul {
     list-style-type: none;
-	margin: auto;
-	text-align: center;
+    margin: auto;
+    text-align: center;
 }
 
 .nav ul li {
-	display: inline-block;
-	padding: 8px;
-	height: auto;
+    display: inline-block;
+    padding: 8px;
+    height: auto;
 }
 
 .nav ul li a:link,
@@ -142,7 +142,7 @@ form input {
 }
 
 .footer {
-	clear: both;
+    clear: both;
     background: #231F20;
     text-align: center;
     padding: 10px;
@@ -151,13 +151,13 @@ form input {
 
 .footer a:link,
 .footer a:visited {
-	text-decoration: none;
-	color: gray;
+    text-decoration: none;
+    color: gray;
 }
 
 .footer a.fa:link,
 .footer a.fa:visited {
-	color: white;
+    color: white;
 }
 
 .fa {
@@ -228,16 +228,16 @@ form input {
 }
 
 @media (max-width: 800px) {
-	.nav ul {
-		 max-width: 800px;
- 		 margin-right: auto;
- 		 margin-left: auto;
-	}
-	.nav ul li {
-		display: list-item;
-		width: auto;
-		text-align: center;
-	}
+    .nav ul {
+         max-width: 800px;
+         margin-right: auto;
+         margin-left: auto;
+    }
+    .nav ul li {
+        display: list-item;
+        width: auto;
+        text-align: center;
+    }
 }
 
 @media (max-width: 680px) {
