@@ -12,11 +12,14 @@
     -moz-column-count: 4;
 
     column-width: 20vw;
-    -webkit-column-width: 20vw;
+	-webkit-column-width: 20vw;
     -moz-column-width: 20vw;
 
 }
 
+.col-container {
+	-webkit-column-width: 50vw; /* Arruma as colunas, mas por quÃª? */
+}
 html, body {
     height: 100%;
     margin: 0;
@@ -25,51 +28,50 @@ html, body {
 }
 
 .header {
-  text-align: center;
+    text-align: center;
+	background: #231F20; /* Cobre a folga entre a imagem e o cabeÃ§alho */
 }
 
-img {
-    width: 100%;
+/* Preencher cabeÃ§alho com imagem */
+.header img {
+	width: 100%;
 }
 
-nav {
+/* Navbar do WordPress */
+.nav {
   background-color: white;
   width: 100%;
-  height: 46px;
   margin: 0px auto;
   position: relative;
 }
 
-nav .dropdown {
-  float: left;
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-nav .dropdown:hover {
-  background-color: #daa66a;
-  color: black;
+.nav ul {
+    list-style-type: none;
+	margin: auto;
+	text-align: center;
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-    transition: all .3s ease-in-out;
+.nav ul li {
+	display: inline-block;
+	padding: 8px;
+	height: auto;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
+.nav ul li a:link,
+.nav ul li a:visited {
+    border-bottom: none;
+    text-decoration: none;
+    color: black;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+.nav ul li:hover {
+    background-color: orange;
+}
+
+/* Como nao tenho acesso a classe original, altero aqui */
+.current-menu-item {
+    background-color: #696772;
+    color: #fff;
 }
 
 .apresentacao {
@@ -122,7 +124,7 @@ iframe {
     background: #231F20;
 }
 
-button {
+form input {
     margin: auto;
     color: black;
     padding: 12px;
@@ -140,9 +142,22 @@ button {
 }
 
 .footer {
-  background: #231F20;
-  text-align: center;
-  padding: 10px;
+	clear: both;
+    background: #231F20;
+    text-align: center;
+    padding: 10px;
+    color: gray;
+}
+
+.footer a:link,
+.footer a:visited {
+	text-decoration: none;
+	color: gray;
+}
+
+.footer a.fa:link,
+.footer a.fa:visited {
+	color: white;
 }
 
 .fa {
@@ -188,7 +203,7 @@ button {
     padding: 2vw;
 }
 
-/* Header da página de informações */
+/* Header da pÃ¡gina de informaÃ§Ãµes */
 
 .h2-info {
     color: #f1a961;
@@ -196,7 +211,7 @@ button {
 
 /* Media queries */
 @media (max-width: 1228px) {
-    .fotos, .col-container, nav {
+    .fotos, .col-container {
 
         column-count: 2;
         -moz-column-count: 2;
@@ -212,8 +227,21 @@ button {
     }
 }
 
+@media (max-width: 800px) {
+	.nav ul {
+		 max-width: 800px;
+ 		 margin-right: auto;
+ 		 margin-left: auto;
+	}
+	.nav ul li {
+		display: list-item;
+		width: auto;
+		text-align: center;
+	}
+}
+
 @media (max-width: 680px) {
-    .fotos, .col-container, nav {
+    .fotos, .col-container {
 
         column-count: 1;
         -moz-column-count: 1;
@@ -227,4 +255,5 @@ button {
     .col {
       width: 80vw;
     }
+
 }
